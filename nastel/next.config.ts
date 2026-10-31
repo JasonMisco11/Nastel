@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   // Version static asset URLs per commit so Vercel/CDN caches cannot mix
   // CSS from an older release with the current page markup.
-  deploymentId: process.env.VERCEL_GIT_COMMIT_SHA ?? "nastel-local",
+  deploymentId: process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 12) ?? "nastel-local",
   experimental: {
     agentFeedback: true,
   },
