@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FashionGalleryCards, HeroLookDeck } from "./fashion-galleries";
 
 const phone = "233243075120";
 const whatsapp = `https://wa.me/${phone}`;
@@ -41,7 +42,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow"><span /> AFRICAN COUTURE · ACCRA, GHANA</p>
-          <h1>Wear your<br /><em>story.</em></h1>
+          <h1>Elegance<br /><em>and Style.</em></h1>
           <p className="hero-intro">Beautiful African fashion, cut to your fit and made for the way you want to feel.</p>
           <div className="hero-actions">
             <a className="button button-dark" href={bookingLink} target="_blank" rel="noreferrer">Let’s make your look <ArrowIcon /></a>
@@ -49,11 +50,7 @@ export default function Home() {
           </div>
           <div className="hero-note"><span className="note-mark">N.</span><span>Custom womenswear & menswear<br />made with care in Accra.</span></div>
         </div>
-        <div className="hero-visual">
-          <div className="hero-photo" role="img" aria-label="Two African women wearing vibrant Ankara outfits and matching headwraps" />
-          <div className="image-caption"><span>COLOR · CRAFT · CHARACTER</span><span>NASTEL / 01</span></div>
-          <div className="hero-seal"><span>MADE<br />FOR YOUR<br />MOMENT</span><b>✳</b></div>
-        </div>
+        <HeroLookDeck />
       </section>
 
       <section className="intro-strip" id="about">
@@ -67,29 +64,7 @@ export default function Home() {
           <div><p className="eyebrow">THE NASTEL LOOKBOOK</p><h2>Colour made <em>personal.</em></h2></div>
           <p>Bring the fabric, bring the idea. We’ll make the look feel unmistakably yours.</p>
         </div>
-        <div className="service-grid">
-          <article className="service-card women-card">
-            <div className="service-image women-image" role="img" aria-label="Elegant Ghanaian woman wearing a green lace dress with Kente sash and matching headwrap" />
-            <div className="service-meta"><span>01 / WOMENSWEAR</span><span>✳</span></div>
-            <h3>Made to make<br />an entrance.</h3>
-            <p>Show-stopping occasion looks, beautiful daywear and the details that make it yours.</p>
-            <a href={contactLink("Hello Nastel, I’m interested in womenswear.")} target="_blank" rel="noreferrer">Find your look <ArrowIcon /></a>
-          </article>
-          <article className="service-card men-card">
-            <div className="service-image men-image" role="img" aria-label="Confident man wearing embroidered African formalwear" />
-            <div className="service-meta"><span>02 / MENSWEAR</span><span>✳</span></div>
-            <h3>Tradition with<br />a fresh point of view.</h3>
-            <p>Distinctive African formalwear and smart, made-to-measure pieces for every occasion.</p>
-            <a href={contactLink("Hello Nastel, I’m interested in menswear.")} target="_blank" rel="noreferrer">Find your fit <ArrowIcon /></a>
-          </article>
-          <article className="service-card craft-card">
-            <div className="service-image detail-image" role="img" aria-label="Woman modelling a bold print skirt with a contemporary tailored jacket" />
-            <div className="service-meta"><span>03 / YOUR OWN DESIGN</span><span>✳</span></div>
-            <h3>A little bold.<br />A lot of you.</h3>
-            <p>Start with a fabric you love. We’ll help shape it into a one-of-a-kind piece.</p>
-            <a href={contactLink("Hello Nastel, I have an idea for a custom design.")} target="_blank" rel="noreferrer">Bring your idea <ArrowIcon /></a>
-          </article>
-        </div>
+        <FashionGalleryCards />
       </section>
 
       <section className="quote-band">
@@ -120,7 +95,7 @@ export default function Home() {
 
       <footer className="footer">
         <a className="footer-brand" href="#top">Nastel<span>✳</span></a>
-        <p>Made with care in Accra, Ghana.</p>
+        <p>Elegance and Style · Made with care in Accra.</p>
         <a href={bookingLink} target="_blank" rel="noreferrer">Let’s make something yours <ArrowIcon /></a>
         <span className="copyright">© NASTEL 2026</span>
       </footer>
