@@ -22,9 +22,9 @@ const looks: Record<GalleryName, Look[]> = {
 };
 
 const heroLooks = [
+  { ...looks.womenswear[4], label: "Beaded evening look" },
   { ...looks.womenswear[2], label: "Golden Ankara" },
   { ...looks.womenswear[3], label: "Rust & forest green" },
-  { ...looks.womenswear[0], label: "Black & gold occasionwear" },
 ];
 
 function Arrow({ direction = "right" }: { direction?: "left" | "right" }) {
