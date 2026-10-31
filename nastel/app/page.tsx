@@ -40,62 +40,62 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span /> THOUGHTFULLY MADE. MADE FOR YOU.</p>
-          <h1>Wear the<br /><em>feeling.</em></h1>
-          <p className="hero-intro">Considered, custom clothing for the moments that matter — and all the days in between.</p>
+          <p className="eyebrow"><span /> AFRICAN COUTURE · ACCRA, GHANA</p>
+          <h1>Wear your<br /><em>story.</em></h1>
+          <p className="hero-intro">Beautiful African fashion, cut to your fit and made for the way you want to feel.</p>
           <div className="hero-actions">
-            <a className="button button-dark" href={bookingLink} target="_blank" rel="noreferrer">Start a conversation <ArrowIcon /></a>
-            <a className="text-link" href="#services">Explore the atelier <span>↓</span></a>
+            <a className="button button-dark" href={bookingLink} target="_blank" rel="noreferrer">Let’s make your look <ArrowIcon /></a>
+            <a className="text-link" href="#services">See what we make <span>↓</span></a>
           </div>
-          <div className="hero-note"><span className="note-mark">N.</span><span>Personal style, shaped<br />one stitch at a time.</span></div>
+          <div className="hero-note"><span className="note-mark">N.</span><span>Custom womenswear & menswear<br />made with care in Accra.</span></div>
         </div>
         <div className="hero-visual">
-          <div className="hero-photo" role="img" aria-label="Editorial portrait in a beautifully tailored outfit" />
-          <div className="image-caption"><span>THE NASTEL POINT OF VIEW</span><span>01 — 03</span></div>
-          <div className="hero-seal"><span>MADE<br />WITH<br />INTENTION</span><b>✳</b></div>
+          <div className="hero-photo" role="img" aria-label="Two African women wearing vibrant Ankara outfits and matching headwraps" />
+          <div className="image-caption"><span>COLOR · CRAFT · CHARACTER</span><span>NASTEL / 01</span></div>
+          <div className="hero-seal"><span>MADE<br />FOR YOUR<br />MOMENT</span><b>✳</b></div>
         </div>
       </section>
 
       <section className="intro-strip" id="about">
-        <div className="strip-label">THE ART OF<br />A GOOD FIT</div>
-        <p>Clothes should feel like <em>you.</em> At Nastel, we bring your ideas to life with personal fittings, considered details and a little atelier magic.</p>
+        <div className="strip-label">YOUR FABRIC.<br />YOUR FIT. YOUR MOMENT.</div>
+        <p>From bold prints to beautiful finishing, we make clothes that let <em>you</em> walk in as yourself.</p>
         <a className="round-link" href="#services" aria-label="Discover our services"><ArrowIcon /></a>
       </section>
 
       <section className="services section-pad" id="services">
         <div className="section-heading">
-          <div><p className="eyebrow">THE ATELIER</p><h2>Made for <em>your</em> moment.</h2></div>
-          <p>From the first sketch to the final fitting, every piece begins with a conversation.</p>
+          <div><p className="eyebrow">THE NASTEL LOOKBOOK</p><h2>Colour made <em>personal.</em></h2></div>
+          <p>Bring the fabric, bring the idea. We’ll make the look feel unmistakably yours.</p>
         </div>
         <div className="service-grid">
           <article className="service-card women-card">
-            <div className="service-image women-image" role="img" aria-label="Woman wearing a statement custom outfit" />
+            <div className="service-image women-image" role="img" aria-label="Elegant Ghanaian woman wearing a green lace dress with Kente sash and matching headwrap" />
             <div className="service-meta"><span>01 / WOMENSWEAR</span><span>✳</span></div>
-            <h3>Her own kind<br />of beautiful.</h3>
-            <p>Statement dresses, occasion wear and everyday pieces, made around your shape and your style.</p>
-            <a href={contactLink("Hello Nastel, I’m interested in womenswear.")} target="_blank" rel="noreferrer">Explore womenswear <ArrowIcon /></a>
+            <h3>Made to make<br />an entrance.</h3>
+            <p>Show-stopping occasion looks, beautiful daywear and the details that make it yours.</p>
+            <a href={contactLink("Hello Nastel, I’m interested in womenswear.")} target="_blank" rel="noreferrer">Find your look <ArrowIcon /></a>
           </article>
           <article className="service-card men-card">
-            <div className="service-image men-image" role="img" aria-label="Man in a tailored suit" />
+            <div className="service-image men-image" role="img" aria-label="Confident man wearing embroidered African formalwear" />
             <div className="service-meta"><span>02 / MENSWEAR</span><span>✳</span></div>
-            <h3>Sharp by nature.<br />Yours by design.</h3>
-            <p>Modern tailoring, traditional craftsmanship and the right fit for every occasion.</p>
-            <a href={contactLink("Hello Nastel, I’m interested in menswear.")} target="_blank" rel="noreferrer">Explore menswear <ArrowIcon /></a>
+            <h3>Tradition with<br />a fresh point of view.</h3>
+            <p>Distinctive African formalwear and smart, made-to-measure pieces for every occasion.</p>
+            <a href={contactLink("Hello Nastel, I’m interested in menswear.")} target="_blank" rel="noreferrer">Find your fit <ArrowIcon /></a>
           </article>
           <article className="service-card craft-card">
-            <div className="craft-art"><span className="thread-line" /><span className="craft-letter">N</span><span className="craft-star">✳</span></div>
-            <div className="service-meta"><span>03 / THE FINISHING TOUCH</span><span>✳</span></div>
-            <h3>Little changes.<br />Big difference.</h3>
-            <p>Alterations and thoughtful adjustments to make a much-loved piece feel just right.</p>
-            <a href={contactLink("Hello Nastel, I’d like to ask about alterations.")} target="_blank" rel="noreferrer">Ask about alterations <ArrowIcon /></a>
+            <div className="service-image detail-image" role="img" aria-label="Woman modelling a bold print skirt with a contemporary tailored jacket" />
+            <div className="service-meta"><span>03 / YOUR OWN DESIGN</span><span>✳</span></div>
+            <h3>A little bold.<br />A lot of you.</h3>
+            <p>Start with a fabric you love. We’ll help shape it into a one-of-a-kind piece.</p>
+            <a href={contactLink("Hello Nastel, I have an idea for a custom design.")} target="_blank" rel="noreferrer">Bring your idea <ArrowIcon /></a>
           </article>
         </div>
       </section>
 
       <section className="quote-band">
         <span className="quote-spark">✳</span>
-        <p>“A great fit is more than how it looks.<br />It’s how <em>you feel</em> when you walk in.”</p>
-        <span className="quote-credit">THE NASTEL PROMISE</span>
+        <p>“Let your clothes speak<br />in a voice that’s <em>all your own.</em>”</p>
+        <span className="quote-credit">YOUR STORY, WORN WITH PRIDE</span>
       </section>
 
       <section className="visit section-pad" id="visit">
